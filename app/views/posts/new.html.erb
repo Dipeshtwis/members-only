@@ -1,17 +1,21 @@
-<%= form_for(@post) do |f| %>
-  <ul>
-  <% @post.errors.full_messages.each do |error| %>
-    <li><%= error %></li>
-  <% end %>
-  </ul>
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    <h1 class="text-center">Create Post</h1>
+      <%= form_for(@post) do |f| %>
+      <div class="form-group">
+        <%= f.text_field :title, placeholder: "Title of the post", class: "form-control" %>
+      </div>
   <div class="form-group">
-    <%= f.text_field :title, placeholder: "Title of the post" %>
-  </div>
-  <div class="form-group">
-    <%= f.text_field :body, placeholder: "Body of the post" %>
+    <%= f.text_field :body, placeholder: "Body of the post", class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit "Submit" %>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
   </div>
-<% end %>
-<%= link_to 'Back', :back %>
+  <% end %>
+   <%= link_to 'Back', :back %>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

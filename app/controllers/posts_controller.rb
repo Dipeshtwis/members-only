@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     @post = current_member.posts.build(posts_params)
     if @post.save
       flash[:notice] = 'Post was created successfully'
-      redirect_to post_index_path
+      redirect_to posts_path
     else
       flash[:alert] = 'Oops!! Something Wrong'
       render 'new'
