@@ -12,5 +12,5 @@ class Member < ApplicationRecord
   validates :email, presence: true, length: { maximum: 50 },
                     uniqueness: { case_sensitive: false },
                     format: { with: VALID_EMAIL_REGEX }
-  validates :name, presence: true, length: { minimum: 5, maximum: 25 }
+  validates :name, presence: true, length: { minimum: 6, maximum: 25 }
 end
