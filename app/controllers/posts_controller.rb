@@ -1,9 +1,10 @@
 class PostsController < ApplicationController
-  before_action :authenticate_member!, only: [:new, :create]
+  before_action :authenticate_member!, only: %i[new create]
 
   def index
-    @posts = Post.all.all.order("created_at DESC")
+    @posts = Post.all.all.order('created_at DESC')
   end
+
   def new
     @post = current_member.posts.build
   end
@@ -24,5 +25,4 @@ class PostsController < ApplicationController
   def posts_params
     params.require(:post).permit(:title, :body)
   end
-  
 end
