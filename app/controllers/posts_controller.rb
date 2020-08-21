@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-  before_action :authenticate_member!, only: %i[new create]
-
   def index
     @posts = Post.all.all.order('created_at DESC')
   end
