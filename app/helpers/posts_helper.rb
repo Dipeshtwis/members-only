@@ -1,8 +1,6 @@
 module PostsHelper
   def create_post
-    if member_signed_in?
-      link_to('Create Post', new_post_path, class: 'float-right mr-2 btn btn-outline-secondary')
-    end
+    link_to('Create Post', new_post_path, class: 'float-right mr-2 btn btn-outline-secondary') if member_signed_in?
   end
 
   def show_author_name(post)
