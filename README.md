@@ -41,7 +41,7 @@ $ cd <folder>
 ~~~bash
 $ git clone git@github.com:Dipeshtwis/members-only.git
 $ cd members-only
-$ bundle install
+$ bundle
 $ yarn install --check-files
 $ rails db:migrate
 ~~~
