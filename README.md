@@ -27,8 +27,8 @@ In this project,I built an exclusive clubhouse app where members can write embar
 
 ## Live Demo Link <a name = "ll"></a>
 
-[Live Demo](https://memberonly.herokuapp.com/)
-
+[Live Demo](https://memberonly.herokuapp.com/) [Deprecated]
+Now only available locally
 
 ## Getting Started <a name = "gs"></a>
 
